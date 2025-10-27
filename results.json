@@ -1,0 +1,43 @@
+{
+  "run_dir": "/content/drive/MyDrive/rl_pendulum_run/exp1_PPO_default",
+  "models_dir": "/content/drive/MyDrive/rl_pendulum_run/exp1_PPO_default/models",
+  "eval_dir": "/content/drive/MyDrive/rl_pendulum_run/exp1_PPO_default/eval",
+  "videos_dir": "/content/drive/MyDrive/rl_pendulum_run/exp1_PPO_default/videos",
+  "final_model_path": "/content/drive/MyDrive/rl_pendulum_run/exp1_PPO_default/models/exp1_PPO_default_final.zip",
+  "best_model_path": "/content/drive/MyDrive/rl_pendulum_run/exp1_PPO_default/models/best_model.zip",
+  "final_eval_mean_20": -562.13349355,
+  "final_eval_std_20": 96.54615988639998,
+  "best_eval_mean_20": -667.82458945,
+  "best_eval_std_20": 104.60460504706762,
+  "reward_plot_path": "/content/drive/MyDrive/rl_pendulum_run/exp1_PPO_default/run_reward_plot.png",
+  "video_file": "/content/drive/MyDrive/rl_pendulum_run/exp1_PPO_default/videos/exp1_PPO_default_demo_20251027_160959-episode-1.mp4",
+  "train_time_sec": 265.0726578235626,
+  "config": {
+    "name": "exp1_PPO_default",
+    "algo": "PPO",
+    "env_id": "Pendulum-v1",
+    "gamma": 0.99,
+    "learning_rate": 0.0003,
+    "tau": 0.02,
+    "buffer_size": 100000,
+    "batch_size": 256,
+    "train_freq": [
+      1,
+      "episode"
+    ],
+    "gradient_steps": 64,
+    "n_steps": 2048,
+    "ppo_batch_size": 64,
+    "gae_lambda": 0.95,
+    "ent_coef": 0.0,
+    "vf_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "policy_kwargs": {
+      "net_arch": [
+        256,
+        256
+      ],
+      "use_sde": false
+    }
+  }
+}
